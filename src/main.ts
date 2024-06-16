@@ -83,6 +83,14 @@ class AsaQuery {
   serverNameContains(name: string) {
     return this.addCriteria('attributes.CUSTOMSERVERNAME_s', 'CONTAINS', name);
   }
+  ipContains(xip: string) {
+    let ip: any = xip.split(':');
+    console.log(ip);
+    let x = this.addCriteria('attributes.ADDRESSDEV_s', 'CONTAINS', ip[0]);
+    if (ip.length < 2) return x;
+    let y = this.addCriteria('attributes.ADDRESSBOUND_s', 'CONTAINS', ip[1]);
+    return y;
+  }
 
   /**
    * official allows you to query for official servers only, excluding unofficial servers.

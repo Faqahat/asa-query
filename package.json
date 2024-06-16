@@ -1,10 +1,10 @@
 {
-  "name": "asa-query",
+  "name": "asa-query-ulta",
   "version": "0.1.0",
-  "description": "A simple way to query ARK: Survival Ascended's server list",
+  "description": "A simple way to query ARK: Survival Ascended's server list. Modified For UltaHost",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
-  "repository": "https://github.com/lkd70/asa-query.git",
+  "repository": "https://github.com/faqahat/asa-query.git",
   "author": {
     "name": "lkd70",
     "email": "contact@lkd70.com"

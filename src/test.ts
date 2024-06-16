@@ -18,4 +18,10 @@ describe('AsaQuery', () => {
     const result = await asaQuery.exec();
     expect(result).toBeDefined();
   });
+
+  test('Server IP Contains', async () => {
+    asaQuery.serverNameContains('79.133.56.38:8822');
+    const result = await asaQuery.exec();
+    expect(result).toBeDefined();
+  });
 });
